@@ -168,21 +168,6 @@ contract tradeAsset is ERC1155Holder {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    fallback() external payable {}
-
     receive() external payable {}
 
 
