@@ -70,7 +70,7 @@ contract tradeAsset is ERC1155Holder {
         string memory _propertyDescription,
         string memory _propertyLocation,
         uint256 _priceInCelo,
-        IERC1155 _propertyNft,
+        address _propertyNft,
         uint256 _propertyNftId
     ) public payable {
 
@@ -80,7 +80,7 @@ contract tradeAsset is ERC1155Holder {
 
         //nftID or propertyID 
         listedPropertyIds.push(_propertyId);
-        _propertyNft.safeTransferFrom(
+        IERC1155(_propertyNft).safeTransferFrom(
             msg.sender,
             address(this),
             _propertyNftId,

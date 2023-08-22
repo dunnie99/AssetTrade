@@ -33,12 +33,10 @@ contract AssetTest is Test{
 
     function testlistProperty() public {
         setUp();
-        vm.startPrank(Bob);
-        //property.mintProperty(Bob, 1, 20);
-        
+        vm.startPrank(Bob);        
         property.setApprovalForAll(address(tradeContract), true);
         
-        tradeContract.listProperty(901, "The Genesis", "A house", "The moon", 20, property, 1);
+        tradeContract.listProperty(901, "The Genesis", "A house", "The moon", 20, address(property), 1);
 
     }
 
