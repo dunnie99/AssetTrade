@@ -74,7 +74,7 @@ contract tradeAsset is ERC1155Holder {
         uint256 _propertyNftId
     ) public payable {
 
-        require(msg.value > 5, "Invalid value");
+        require(msg.value >= 5000 gwei , "Invalid value");
         require(idUsed[_propertyId] == false, "ID already taken");
         idUsed[_propertyId] = true;
 
@@ -110,7 +110,7 @@ contract tradeAsset is ERC1155Holder {
         uint256 _propertyId
     ) external isValidID(_propertyId) payable {
         Property storage property = properties[_propertyId];
-        require(msg.value >= property.priceInCELO, "Insufficient balance for property purchase");
+        require(msg.value >= property.priceInCELO, "Insufficient amount for property purchase");
         require(property.forSale == true, "Property sold out");
         
         address newOwner = msg.sender;
@@ -131,7 +131,7 @@ contract tradeAsset is ERC1155Holder {
 
 
 
-        //Removing the sold property from listed properties
+        
 
         emit PropertySold(_propertyId, newOwner);
     }
@@ -141,6 +141,7 @@ contract tradeAsset is ERC1155Holder {
         require(_recipientAddress != address(0), "Invalid recipient");
         require(idUsed[_propertyID], "Invalid PropertyID");
         Property storage property = properties[_propertyID];
+        require(property.forSale == false, "Property for sale");
         require(property.owner == msg.sender, "Not owner!");
         require(property.nftId == _propertyNftId, "Invalid _propertyNftId");
         IERC1155(_tokenAddress).safeTransferFrom(

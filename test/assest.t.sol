@@ -33,15 +33,22 @@ contract AssetTest is Test{
 
     function testlistProperty() public {
         setUp();
-        vm.startPrank(Bob);        
+        vm.startPrank(Bob); 
+        vm.deal(Bob, 100 ether);       
         property.setApprovalForAll(address(tradeContract), true);
         
-        tradeContract.listProperty(901, "The Genesis", "A house", "The moon", 20, address(property), 1);
-
+        tradeContract.listProperty{value: 5000 gwei }(901, "The Genesis", "A house", "The moon", 20 ether, address(property), 1);
+       
     }
 
-    function testBuy() public {
+    
 
+    function testBuy() public {
+        testlistProperty();
+         vm.stopPrank;
+        vm.startPrank(Alice); 
+        vm.deal(Alice, 100 ether);    
+        tradeContract.buyProperty{value: 20 ether }(901);
 
     }
 
