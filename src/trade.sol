@@ -157,9 +157,9 @@ contract tradeAsset is ERC1155Holder {
 
 
 
-    function withdrawCelo(address payable _recipientAddress, uint _amount) external onlyOwner(){
+    function withdrawCelo(address _recipientAddress, uint _amount) external onlyOwner(){
         require(_recipientAddress != address(0), "Invalid address");
-        _recipientAddress.transfer(_amount);
+        payable(_recipientAddress).transfer(_amount);
 
     }
 
