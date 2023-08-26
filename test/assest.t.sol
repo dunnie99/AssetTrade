@@ -38,14 +38,14 @@ contract AssetTest is Test{
         property.setApprovalForAll(address(tradeContract), true);
         
         tradeContract.listProperty{value: 5000 gwei }(901, "The Genesis", "A house", "The moon", 20 ether, address(property), 1);
-       
+        vm.stopPrank();
     }
 
     
 
     function testBuy() public {
         testlistProperty();
-         vm.stopPrank;
+         
         vm.startPrank(Alice); 
         vm.deal(Alice, 100 ether);    
         tradeContract.buyProperty{value: 20 ether }(901);
