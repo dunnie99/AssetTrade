@@ -161,7 +161,7 @@ This article also featured, a breakdown of the technical procedure required for 
 
 
     #### Property Acquisition Contract Explained
-
+    The PropertyAcquisition contract manages property transactions by automating the acquisition process. It includes functions for listing properties, acquiring properties, and more.
     We will create the PropertyAcquisition smart contract, which enables property acquisitions using CELO tokens.
 
     ```solidity
