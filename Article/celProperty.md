@@ -78,6 +78,11 @@ This article also featured, a breakdown of the technical procedure required for 
 
     Using smart contracts for property acquisition makes the process of buying property transparent, safe, and faster. Transactions happen according to rules set beforehand, reducing the need for intermediaries, the acquisition process happens smoothly and quickly.
 
+    ## ERC-1155, And Why?
+
+    ERC-1155 is like a special type of smart contract on the Ethereum blockchain that can hold many different kinds of digital assets all in one place. Imagine ERC-1155 as a digital toolbox that can hold different types of properties, like houses, apartments, or land, all in one place. Advantages Include;
+    Saves Money, Easy Buying, Safe Transactions,Custom Information, Works Everywhere, Sharing Ownership
+
 
     ## Tutorial
     Let us delve into the step-by-step tutorial for creating a Property Acquisition Smart Contract on the Celo blockchain.
@@ -114,7 +119,7 @@ This article also featured, a breakdown of the technical procedure required for 
 
     ### STEP 2 - Create your Smart Contracts
 
-    In the root directory of your project, you'll find a folder called "contracts". To create a new TypeScript file, simply navigate to this folder and add your new files.
+    In the root directory of your project, you'll find a folder called "src". To create a new solidity file, simply navigate to this folder and add your new files.
     <br/>
 
     For this tutorial, we'll be writing an ERC1155 Property Acquisition Contract. To create this contracts, we'll need to generate two files:
@@ -126,7 +131,7 @@ This article also featured, a breakdown of the technical procedure required for 
 
     #### ERC1155 Token Contract Explained
 
-    The PropertyAcquisition contract manages property transactions by automating the acquisition process. It includes functions for listing properties, acquiring properties, and more.
+    This is an ERC1155 token contract from Openzeppelin Wizard to mint properties we'll be using in the property acquisition contract.
 
     ```solidity
     // SPDX-License-Identifier: MIT
