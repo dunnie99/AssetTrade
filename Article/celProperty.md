@@ -129,7 +129,7 @@ This article also featured, a breakdown of the technical procedure required for 
 
 
 
-    #### ERC1155 Token Contract Explained
+    #### ERC1155 Token Contract As Property Contract
 
     This is an ERC1155 token contract from Openzeppelin Wizard to mint properties we'll be using in the property acquisition contract.
 
