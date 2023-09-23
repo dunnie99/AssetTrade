@@ -387,20 +387,6 @@ command and it can deploy only one contract at a time.
 Before deploying your contract to the Celo testnet, ensure that you have added the Celo testnet RPC to your Metamask wallet, if not follow this [guide](https://docs.celo.org/blog/tutorials/3-simple-steps-to-connect-your-metamask-wallet-to-celo) to add it & also get faucet from this [site](https://faucet.celo.org/alfajores).
 <br/>
 
-Next, To enable the use of your private key for your Celo account during contract deployment, you will need to install an env file. You can store your private key in the ".env" file and use the dotenv package to load it into your Hardhat configuration. Here is an example of how to configure it:
-
-- Install the dotenv package:
-
-```
-npm install dotenv
-```
-
-- Create a .env file in the root directory of your project, paste your private key, and ETHERSCAN_API_KEY into it:
-
-```
-PRIVATE_KEY=<your-private-key>
-ETHERSCAN_API_KEY = <ETHERSCAN_API_KEY>
-```
 To deploy the PropertyAcquisition contract, you must provide a RPC URL (env: CELO_RPC_URL) and the private key of the account that will deploy the contract.
 
 To deploy to CELO using Forge:
