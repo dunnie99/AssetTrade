@@ -400,7 +400,11 @@ And the --constructor-args  to flag arguments pass to the constructor:
 Repeat procedure for ERC1155 contract deployment.
 
 
-### STEP 4 - Verifying your contracts
+### STEP 4 - Verifying your contracts.
+
+
+
+### Conclusion
 
 
 
