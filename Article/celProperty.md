@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In blockchain technology, the usage of smart contracts has revolutionized various industries, including real estate. This article delves into the creation and implementation of a Property Acquisition Smart Contract on the Celo blockchain. We'll explore the contract's architecture, its features, and its application in facilitating property transactions.
+In blockchain technology, the usage of smart contracts has changed various industries, including real estate. This article delves into the creation and implementation of a Property Acquisition Smart Contract on the Celo blockchain. We'll explore the contract's architecture, its features, and its application in facilitating property transactions.
 
 <br>
 This article also featured, a breakdown of the technical procedure required for deploying the smart contract and demonstration of the interaction
@@ -80,7 +80,7 @@ This article also featured, a breakdown of the technical procedure required for 
 
     ## ERC-1155, And Why?
 
-    ERC-1155 is like a special type of smart contract on the Ethereum blockchain that can hold many different kinds of digital assets all in one place. Imagine ERC-1155 as a digital toolbox that can hold different types of properties, like houses, apartments, or land, all in one place. Advantages Include;
+    ERC-1155 is like a special type of smart contract that can hold many different kinds of digital assets all in one place. Imagine ERC-1155 as a digital toolbox that can hold different types of properties, like houses, apartments, or land, all in one place. Advantages Include;
     Saves Money, Easy Buying, Safe Transactions,Custom Information, Works Everywhere, Sharing Ownership
 
 
@@ -131,7 +131,7 @@ This article also featured, a breakdown of the technical procedure required for 
 
     #### ERC1155 Token Contract As Property Contract
 
-    This is an ERC1155 token contract from Openzeppelin Wizard to mint properties we'll be using in the property acquisition contract.
+    This is an ERC1155 token contract from Openzeppelin [Wizard](https://docs.openzeppelin.com/contracts/4.x/wizard) to mint properties we'll be using in the property acquisition contract.
 
     ```solidity
     // SPDX-License-Identifier: MIT
@@ -375,6 +375,25 @@ This article also featured, a breakdown of the technical procedure required for 
         - withdrawNFT: Allows property owners to withdraw NFTs associated with their  properties.
         - withdrawCelo: Allows the contract owner to withdraw CELO tokens.
 
+### STEP 3 - Deploying your contracts
+
+Before deploying your contract to the Celo testnet, ensure that you have added the Celo testnet RPC to your Metamask wallet, if not follow this [guide](https://docs.celo.org/blog/tutorials/3-simple-steps-to-connect-your-metamask-wallet-to-celo) to add it & also get faucet from this [site](https://faucet.celo.org/alfajores).
+<br/>
+
+Next, add the Celo network configuration to the hardhat.config.ts file located in the root directory of your project. To enable the use of your private key for your Celo account during contract deployment, you will need to install an env file. You can store your private key in the ".env" file and use the dotenv package to load it into your Hardhat configuration. Here is an example of how to configure it:
+
+- Install the dotenv package:
+
+```
+npm install dotenv
+```
+
+- Create a .env file in the root directory of your project, paste your private key, and ETHERSCAN_API_KEY into it:
+
+```
+PRIVATE_KEY=<your-private-key>
+ETHERSCAN_API_KEY = <ETHERSCAN_API_KEY>
+```
 
 
 
