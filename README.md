@@ -394,10 +394,13 @@ To deploy to CELO using Forge:
 ```
 forge create --rpc-url <your_rpc_url> --private-key <your_private_key> src/PropertyAcquisition.sol:PropertyAcquisition.
 ```
+':MyContract' above specifies which contract to deploy from the src/MyContract.sol file.
+And the --constructor-args  to flag arguments pass to the constructor:
+
+Repeat procedure for ERC1155 contract deployment.
 
 
-
-
+### STEP 4 - Verifying your contracts
 
 
 
