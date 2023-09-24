@@ -401,11 +401,18 @@ Repeat procedure for ERC1155 contract deployment.
 
 
 ### STEP 4 - Verifying your contracts.
-
-
+ Forge can verify our contract on Etherscan, by passing --verify.
+```
+forge create --rpc-url <your_rpc_url> \
+    --constructor-args msg.sender \
+    --private-key <your_private_key> \
+    --etherscan-api-key <your_etherscan_api_key> \
+    --verify \
+    src/PropertyAcquisition.sol:PropertyAcquisition
+```
 
 ### Conclusion
-
+In this article, we've explored the creation and implementation of a Property Acquisition Smart Contract on the Celo blockchain. By harnessing the power of smart contracts, we've simplified and secured property transactions, introducing transparency and efficiency to the real estate industry. Through this guide, you've gained insights into leveraging blockchain technology for real-world applications.
 
 
 
