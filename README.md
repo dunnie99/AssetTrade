@@ -387,7 +387,7 @@ command and it can deploy only one contract at a time.
 Before deploying your contract to the Celo testnet, ensure that you have added the Celo testnet RPC to your Metamask wallet, if not follow this [guide](https://docs.celo.org/blog/tutorials/3-simple-steps-to-connect-your-metamask-wallet-to-celo) to add it & also get faucet from this [site](https://faucet.celo.org/alfajores).
 <br/>
 
-To deploy the PropertyAcquisition contract, you must provide a RPC URL (env: CELO_RPC_URL) and the private key of the account that will deploy the contract.
+To deploy the PropertyAcquisition contract, you must provide a RPC URL (CELO_RPC_URL) and the private key of the account that will deploy the contract.
 
 To deploy to CELO using Forge:
 
