@@ -49,7 +49,7 @@ This article also featured, a breakdown of the technical procedure required for 
 
     - Development Environment:
 
-        Remix, VScode, and Truffle are some of the tools that can be used to write,test and deploy smart contracts on Celo. In this article, we will make use of; 
+        Remix, VScode, and Hardhat are some of the tools that can be used to write,test and deploy smart contracts on Celo. In this article, we will make use of; 
 
         Visual Studio Code (VS Code) with Solidity Extensions: A popular code editor with extensions that provide Solidity syntax highlighting, debugging, and more.
 
