@@ -41,9 +41,9 @@ This article also featured, a breakdown of the technical procedure required for 
 
     - Understanding of Solidity: It is important to have a strong understanding of Solidity as it is the main programming language for creating smart contracts on Celo blockchain. [solidity documentation](https://docs.soliditylang.org/en/v0.8.21/).
 
-    - Foundry: It is important to learn how to use Foundry, a tool that helps you write, test, and put your smart contracts on the Celo blockchain. [FoundryBook](#https://book.getfoundry.sh/).
+    - Foundry: It is important to learn how to use Foundry, a tool that helps you write, test, and put your smart contracts on the Celo blockchain. [FoundryBook](https://book.getfoundry.sh/).
 
-    - Celo blockchain - Celo focus lies in fostering financial inclusion by enabling secure, fast, and low-cost transactions and smart contracts. [Documentation](#https://docs.celo.org/).
+    - Celo blockchain - Celo focus lies in fostering financial inclusion by enabling secure, fast, and low-cost transactions and smart contracts. [Documentation](https://docs.celo.org/).
 
     ## Requirements
 
