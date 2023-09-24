@@ -412,8 +412,6 @@ forge create --rpc-url <your_rpc_url> \
 ```
 
 ### Conclusion
-In this article, we've explored the creation and implementation of a Property Acquisition Smart Contract on the Celo blockchain. By harnessing the power of smart contracts, we've simplified and secured property transactions, introducing transparency and efficiency to the real estate industry. Through this guide, you've gained insights into leveraging blockchain technology for real-world applications.
-
-
+In this article, we learned how to build a smart contract on the Celo blockchain for buying property. Smart contracts make property transactions safer and easier by using technology. This brings more fairness and speed to real estate. This guide also gave you an insight on how to use blockchain technology for real-world applications.
 
 
