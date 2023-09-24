@@ -7,7 +7,7 @@
 In blockchain technology, the usage of smart contracts has changed various industries, including real estate. This article delves into the creation and implementation of a Property Acquisition Smart Contract on the Celo blockchain. We'll explore the contract's architecture, its features, and its application in facilitating property transactions.
 
 <br>
-This article also featured, a breakdown of the technical procedure required for deploying the smart contract and demonstration of the interaction
+This article also featured, a breakdown of the technical procedure required for deploying the smart contract and verification process.
 
 
 ## Table of Contents
